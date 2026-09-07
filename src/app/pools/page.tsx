@@ -5,8 +5,13 @@ import type { LucideIcon } from "lucide-react";
 import { poolGallery, poolHero, poolZones } from "@/data/pools";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = { title: "Pools", description: "A pool-focused concept for swimming, play, and slower afternoons at Saniya Resort." };
+export const metadata = createPageMetadata(
+  "/pools",
+  "Pools",
+  "Explore a conceptual pool experience for swimming, play, and slower afternoons in this independent Saniya Resort portfolio concept.",
+);
 const icons: Record<string, LucideIcon> = { waves: Waves, baby: Baby, sun: Sun };
 
 export default function PoolsPage() {

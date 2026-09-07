@@ -4,13 +4,20 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, BedDouble, Check, Ruler, Users } from "lucide-react";
 import { accommodations } from "@/data/home";
 import { QuickBooking } from "@/components/booking/quick-booking";
+import { createPageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() { return accommodations.map(room => ({ id: room.id })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const room = accommodations.find(item => item.id === id);
-  return { title: room?.name ?? "Accommodation" };
+  const pathname = `/accommodations/${id}`;
+  const title = room?.name ?? "Accommodation";
+  const description = room
+    ? `${room.summary} An illustrative stay concept from the independent Saniya Resort portfolio.`
+    : "An illustrative accommodation detail page from the independent Saniya Resort portfolio concept.";
+
+  return createPageMetadata(pathname, title, description);
 }
 
 export default async function AccommodationDetail({ params }: { params: Promise<{ id: string }> }) {

@@ -3,11 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { demoMenu, diningExperiences, diningHero, flavorsImage } from "@/data/dining";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Dining & Shared Meals",
-  description: "Explore approachable family dining ideas and an illustrative menu in this independent Saniya Resort portfolio concept. No real menu or dining service is confirmed.",
-};
+export const metadata: Metadata = createPageMetadata(
+  "/dining",
+  "Dining & Shared Meals",
+  "Explore approachable family dining ideas and an illustrative menu in this independent Saniya Resort portfolio concept. No real menu or dining service is confirmed.",
+);
 
 export default function DiningPage() {
   return <>

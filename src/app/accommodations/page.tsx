@@ -4,8 +4,13 @@ import { ArrowRight, BedDouble, Check, Ruler, Users } from "lucide-react";
 import { accommodations } from "@/data/home";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = { title: "Accommodations" };
+export const metadata = createPageMetadata(
+  "/accommodations",
+  "Accommodations",
+  "Explore illustrative accommodation ideas in this independent Saniya Resort portfolio concept. Rates and availability are not live.",
+);
 
 export default function AccommodationsPage() {
   return <>

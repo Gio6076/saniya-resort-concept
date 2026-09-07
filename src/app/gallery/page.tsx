@@ -3,11 +3,13 @@ import Link from "next/link";
 import { ArrowRight, Camera } from "lucide-react";
 import { GalleryBrowser } from "@/components/gallery/gallery-browser";
 import { gallery, galleryCategories } from "@/data/gallery";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Gallery",
-  description: "An editorial gallery of conceptual resort moods for this independent Saniya Resort portfolio concept.",
-};
+export const metadata: Metadata = createPageMetadata(
+  "/gallery",
+  "Gallery",
+  "An editorial gallery of conceptual resort moods for this independent Saniya Resort portfolio concept.",
+);
 
 export default function GalleryPage() {
   return <>

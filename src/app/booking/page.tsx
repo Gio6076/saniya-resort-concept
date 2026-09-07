@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { BookingWizard } from "@/components/booking/booking-wizard";
 import { parseBookingQuery } from "@/data/booking";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Plan your stay" };
+export const metadata: Metadata = createPageMetadata(
+  "/booking",
+  "Plan Your Stay",
+  "Build an illustrative stay in this independent Saniya Resort portfolio concept. It does not connect to live availability or reservations.",
+);
 
 export default async function BookingPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const query = await searchParams;

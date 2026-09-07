@@ -5,8 +5,13 @@ import type { LucideIcon } from "lucide-react";
 import { amenityCategories, facilityFeatures, facilityHero } from "@/data/facilities";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = { title: "Facilities & Amenities", description: "Explore the conceptual facilities and amenities imagined for the Saniya Resort website experience." };
+export const metadata = createPageMetadata(
+  "/facilities",
+  "Facilities & Amenities",
+  "Explore conceptual facilities and amenities imagined for this independent Saniya Resort portfolio website.",
+);
 
 const icons: Record<string, LucideIcon> = { waves: Waves, heart: Heart, utensils: UtensilsCrossed, sparkles: Sparkles, briefcase: BriefcaseBusiness, baby: Baby, party: PartyPopper, wifi: Wifi, car: Car, sun: Sun, users: Users };
 

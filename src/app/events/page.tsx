@@ -4,11 +4,13 @@ import Link from "next/link";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { EventInquiryForm } from "@/components/events/event-inquiry-form";
 import { eventPlanningSteps, eventSettings, eventsHero, eventTypes } from "@/data/events";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Events & Celebrations",
-  description: "Imagine birthdays, reunions, and meaningful gatherings with conceptual settings and a local demo event inquiry. An independent Saniya Resort portfolio concept, not a live event service.",
-};
+export const metadata: Metadata = createPageMetadata(
+  "/events",
+  "Events & Celebrations",
+  "Imagine birthdays, reunions, and meaningful gatherings with conceptual settings in this independent Saniya Resort portfolio concept, not a live event service.",
+);
 
 export default function EventsPage() {
   return <>
