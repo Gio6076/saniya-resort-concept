@@ -10,6 +10,6 @@ export const poolZones: PoolZone[] = [
 
 export const poolGallery = [
   { src: "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=1600&q=85", alt: "Turquoise pool water with ripples in the sunlight" },
-  { src: "https://images.unsplash.com/photo-1605537964076-3cb0ea2ff2e1?auto=format&fit=crop&w=1200&q=85", alt: "Loungers beside a tropical pool in warm evening light" },
+  { src: "https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&w=1200&q=85", alt: "Loungers beside a tropical pool in warm evening light" },
   { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=85", alt: "Green landscape reflected beside a calm body of water" },
 ];
