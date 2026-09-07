@@ -21,7 +21,22 @@ export type Accommodation = {
   featured?: boolean;
 };
 export type Experience = { id: string; title: string; description: string; image: ImageAsset; tag: string };
-export type PackageOffer = { id: string; name: string; description: string; badge: string; inclusions: string[] };
+export type PackageOffer = {
+  id: string;
+  category: "Day-use" | "Overnight" | "Family" | "Celebration" | "Group";
+  name: string;
+  description: string;
+  badge: string;
+  inclusions: string[];
+  limitations: string[];
+  suitableFor: string;
+  demoStartingPrice: number;
+  priceUnit: string;
+  action: "booking" | "accommodations" | "events" | "contact";
+  bookingQuery?: { accommodation?: string; guests?: number };
+};
+export type ContactMethod = { label: string; value: string; href?: string; note: string; icon: "mail" | "phone" | "message" };
+export type PlanningQuestion = { question: string; answer: string };
 export type GalleryItem = ImageAsset & { id: string; category: "Stay" | "Swim" | "Dine" | "Celebrate" };
 export type AmenityCategory = {
   id: string;
