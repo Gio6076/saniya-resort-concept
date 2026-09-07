@@ -1,5 +1,6 @@
-import type { Accommodation, Experience, GalleryItem } from "@/types/content";
+import type { Accommodation, Experience } from "@/types/content";
 export { packages } from "@/data/packages";
+export { gallery } from "@/data/gallery";
 export const heroImage={src:"https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=2400&q=88",alt:"Tropical swimming pool surrounded by palms and resort buildings"};
 export const accommodations:Accommodation[]=[
 {id:"garden-family-room",name:"Garden Family Room",category:"Room",summary:"A breezy, comfortable base designed for unhurried family stays.",description:"Wake up to leafy views, gather easily around a generous room, and keep the day wonderfully simple. The Garden Family Room is a calm home base for families who want comfort between pool days and shared meals.",capacity:4,beds:"2 double beds",size:"34 sqm",stayNote:"Best for small families and easy weekend stays",image:{src:"https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=85",alt:"Warm modern guest room with two beds"},gallery:[{src:"https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1600&q=85",alt:"Warm modern guest room with two beds"},{src:"https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85",alt:"Tropical pool viewed from the resort grounds"}],amenities:["Garden-facing view","Air conditioning","Private bathroom","Complimentary Wi-Fi","Mini refrigerator","Daily housekeeping"],demoPricePerNight:4800,featured:true},
@@ -9,9 +10,3 @@ export const experiences:Experience[]=[
 {id:"family-pools",title:"Make a splash",description:"Spaces for energetic play, slow swims, and sunny afternoons together.",tag:"Pools",image:{src:"https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1600&q=85",alt:"Family-friendly swimming pool under a blue sky"}},
 {id:"shared-meals",title:"Gather around the table",description:"A relaxed dining concept built around familiar flavors and good company.",tag:"Dining",image:{src:"https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1600&q=85",alt:"Inviting restaurant dining space with greenery"}},
 {id:"celebrations",title:"Celebrate your way",description:"Flexible settings for birthdays, reunions, weddings, and meaningful days.",tag:"Events",image:{src:"https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1600&q=85",alt:"Outdoor celebration tables decorated with lights"}}];
-export const gallery:GalleryItem[]=[
-{id:"g1",category:"Swim",src:"https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&w=1200&q=85",alt:"Palm-framed tropical resort pool"},
-{id:"g2",category:"Stay",src:"https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85",alt:"Comfortable modern hotel room"},
-{id:"g3",category:"Celebrate",src:"https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=85",alt:"Warmly lit event venue prepared for guests"},
-{id:"g4",category:"Dine",src:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",alt:"Colorful dishes arranged on a dining table"}];
-export const bookingOptions={guestLimits:{adults:12,children:8},addOns:["Breakfast","Celebration setup","Extra bedding","Late checkout request"]} as const;

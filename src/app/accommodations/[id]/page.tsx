@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, BedDouble, Check, Ruler, Users } from "lucide-react";
 import { accommodations } from "@/data/home";
 import { QuickBooking } from "@/components/booking/quick-booking";
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 export default async function AccommodationDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const room = accommodations.find(item => item.id === id);
-  if (!room) return <section className="container-shell py-24"><h1 className="display-title text-5xl">Accommodation not found</h1><Link href="/accommodations" className="mt-6 inline-flex items-center gap-2 font-bold text-brand"><ArrowLeft className="size-4" aria-hidden="true"/>Back to accommodations</Link></section>;
+  if (!room) notFound();
   return <>
     <section className="bg-ink py-8 text-white sm:py-12"><div className="container-shell"><Link href="/accommodations" className="inline-flex items-center gap-2 text-sm font-bold text-white/70 transition hover:text-white"><ArrowLeft className="size-4" aria-hidden="true"/>All accommodations</Link><div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_.9fr] lg:items-end"><div><p className="eyebrow text-sun">{room.category}</p><h1 className="display-title mt-4 text-5xl sm:text-7xl">{room.name}</h1></div><p className="max-w-md text-base leading-7 text-white/70 lg:justify-self-end">{room.stayNote}</p></div></div></section>
     <section className="py-8 sm:py-12"><div className="container-shell grid gap-3 md:grid-cols-[1.35fr_.65fr]"><div className="relative min-h-[22rem] overflow-hidden rounded-[2rem] md:min-h-[38rem]"><Image src={room.gallery[0].src} alt={room.gallery[0].alt} fill priority sizes="(max-width:768px) 100vw,65vw" className="object-cover"/></div><div className="relative min-h-[16rem] overflow-hidden rounded-[2rem] md:min-h-0"><Image src={room.gallery[1].src} alt={room.gallery[1].alt} fill sizes="(max-width:768px) 100vw,35vw" className="object-cover"/></div></div></section>

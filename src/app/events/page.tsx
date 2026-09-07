@@ -15,7 +15,7 @@ export default function EventsPage() {
     <section className="bg-[#dcece5] py-12 sm:py-20">
       <div className="container-shell grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div><p className="eyebrow text-brand">Celebrations · an independent concept</p><h1 className="display-title mt-5 text-5xl sm:text-7xl">Your people.<br />Your reason<br />to celebrate.</h1><p className="mt-6 max-w-lg text-lg leading-8">The birthday everyone talks about. The reunion that was overdue. Start with the people, then imagine a day that feels like you.</p><Link href="#inquiry" className="mt-8 inline-flex min-h-12 items-center rounded-full bg-ink px-6 py-3 font-bold text-white hover:bg-brand">Build a demo event brief</Link><p className="mt-5 max-w-lg text-sm leading-6">No real inquiry is sent. Settings, photography, and package ideas are illustrative; no venue or service is confirmed.</p></div>
-        <figure><div className="relative aspect-[4/5] overflow-hidden rounded-t-[9rem] rounded-b-[2rem] sm:aspect-square"><Image src={eventsHero.src} alt={eventsHero.alt} fill preload sizes="(max-width:1024px) 100vw,50vw" className="object-cover" /></div><figcaption className="mt-3 text-sm text-muted">A little gathering inspiration, not a verified resort venue.</figcaption></figure>
+        <figure><div className="relative aspect-[4/5] overflow-hidden rounded-t-[9rem] rounded-b-[2rem] sm:aspect-square"><Image src={eventsHero.src} alt={eventsHero.alt} fill priority sizes="(max-width:1024px) 100vw,50vw" className="object-cover" /></div><figcaption className="mt-3 text-sm text-muted">A little gathering inspiration, not a verified resort venue.</figcaption></figure>
       </div>
     </section>
 

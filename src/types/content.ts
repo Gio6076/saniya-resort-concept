@@ -37,7 +37,8 @@ export type PackageOffer = {
 };
 export type ContactMethod = { label: string; value: string; href?: string; note: string; icon: "mail" | "phone" | "message" };
 export type PlanningQuestion = { question: string; answer: string };
-export type GalleryItem = ImageAsset & { id: string; category: "Stay" | "Swim" | "Dine" | "Celebrate" };
+export type GalleryCategory = "All" | "Stay" | "Swim" | "Dine" | "Celebrate" | "Resort spaces";
+export type GalleryItem = ImageAsset & { id: string; category: Exclude<GalleryCategory, "All">; label: string; description: string };
 export type AmenityCategory = {
   id: string;
   title: string;

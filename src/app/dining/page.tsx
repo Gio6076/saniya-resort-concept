@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function DiningPage() {
   return <>
     <section className="relative isolate bg-ink text-white">
-      <Image src={diningHero.src} alt={diningHero.alt} fill preload sizes="100vw" className="object-cover" />
+      <Image src={diningHero.src} alt={diningHero.alt} fill priority sizes="100vw" className="object-cover" />
       <div className="absolute inset-0 bg-ink/65" />
       <div className="container-shell relative py-24 sm:py-32">
         <p className="eyebrow text-sun">Dining · an independent concept</p>
