@@ -12,6 +12,7 @@ export type Accommodation = {
   image: ImageAsset;
   gallery: ImageAsset[];
   amenities: string[];
+  demoPricePerNight: number;
   featured?: boolean;
 };
 export type Experience = { id: string; title: string; description: string; image: ImageAsset; tag: string };
