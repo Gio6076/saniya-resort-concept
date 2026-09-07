@@ -1,4 +1,9 @@
 export type ImageAsset = { src: string; alt: string };
+export type DiningExperience = { id: string; title: string; description: string; moment: string };
+export type DemoMenuItem = { id: string; name: string; description: string; demoPrice: number; serving: string };
+export type EventType = { id: string; label: string };
+export type EventSetting = { id: string; name: string; description: string; planningNote: string; image: ImageAsset };
+export type EventPlanningStep = { title: string; description: string };
 export type Accommodation = {
   id: string;
   name: string;
