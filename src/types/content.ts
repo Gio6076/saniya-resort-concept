@@ -18,3 +18,12 @@ export type Accommodation = {
 export type Experience = { id: string; title: string; description: string; image: ImageAsset; tag: string };
 export type PackageOffer = { id: string; name: string; description: string; badge: string; inclusions: string[] };
 export type GalleryItem = ImageAsset & { id: string; category: "Stay" | "Swim" | "Dine" | "Celebrate" };
+export type AmenityCategory = {
+  id: string;
+  title: string;
+  description: string;
+  icon: "waves" | "heart" | "utensils" | "sparkles" | "briefcase";
+  items: { name: string; description: string; icon: "waves" | "baby" | "utensils" | "party" | "wifi" | "car" | "sun" | "users" | "sparkles" }[];
+};
+export type FacilityFeature = { id: string; eyebrow: string; title: string; description: string; image: ImageAsset; href: string; linkLabel: string; imagePosition?: string };
+export type PoolZone = ImageAsset & { id: string; name: string; type: string; description: string; mood: string; guidance: string; icon: "waves" | "baby" | "sun" };
