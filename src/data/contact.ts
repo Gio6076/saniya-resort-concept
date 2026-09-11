@@ -11,6 +11,6 @@ export const contactMethods: ContactMethod[] = [
 export const planningQuestions: PlanningQuestion[] = [
   { question: "Where is the resort?", answer: "This concept uses only a broad Cavite location placeholder. It deliberately does not publish an exact address, coordinates, or map pin." },
   { question: "How should we plan the trip?", answer: "Before a real visit, verify the official address, route options, parking or transfer arrangements, accessibility needs, and current local travel conditions with an authorized business contact." },
-  { question: "Can this page confirm a booking or package?", answer: "No. The booking and package journeys are interactive portfolio demonstrations. They never check live availability, reserve a date, or take payment." },
+  { question: "Can this page confirm a booking or package?", answer: "No. The booking and package journeys are interactive demonstrations. They never check live availability, reserve a date, or take payment." },
   { question: "Can you confirm operating hours or policies?", answer: "No. This independent concept does not represent verified business hours, entry rules, cancellation policies, or resort services. Request those from an official source." },
 ];

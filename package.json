@@ -2,6 +2,7 @@
   "name": "saniya-resort-concept",
   "version": "0.1.0",
   "private": true,
+  "author": "Giovani Paulo R. Ebarola",
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",

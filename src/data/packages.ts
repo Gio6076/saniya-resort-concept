@@ -11,7 +11,7 @@ export const packages: PackageOffer[] = [
 ];
 
 export const packagePricingGuidance = [
-  "Every amount is an illustrative Philippine peso starting price created for this portfolio concept.",
+  "Every amount is an illustrative Philippine peso starting price created for this independent concept.",
   "A starting price is a comparison cue, not a quote. It can exclude add-ons, fees, taxes, transport, meals, or other real-world terms.",
   "This page never checks dates, availability, capacity, policies, or eligibility. Confirm all details with an authorized resort representative before making plans.",
 ];

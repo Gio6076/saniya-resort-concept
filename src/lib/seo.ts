@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 
 export const siteUrl = new URL("https://saniya-resort-concept.vercel.app");
+export const creatorName = "Giovani Paulo R. Ebarola";
+export const creatorUrl = "https://github.com/Gio6076";
 
 export const siteDescription =
-  "An independent portfolio concept for a welcoming tropical resort website experience.";
+  "An independent website concept for a welcoming tropical resort experience, designed and developed by Giovani Paulo R. Ebarola.";
 
 export function createPageMetadata(
   pathname: string,

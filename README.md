@@ -156,6 +156,8 @@ The project is deployed through Vercel from the GitHub repository. The live depl
 
 ## Author
 
-**Giovani Paulo R. Ebarola**
+Concept design and development by **Giovani Paulo R. Ebarola**.
 
-[GitHub](https://github.com/Gio6076)
+- GitHub: https://github.com/Gio6076
+
+Giovani created the independent website concept and implementation. No affiliation, commission, or endorsement by Saniya Resort & Hotel is implied. This authorship does not claim ownership over the referenced business identity, name, trademarks, original logo, properties, services, products, projects, or public materials. Existing asset attribution and licensing requirements remain valid.
